@@ -1,0 +1,72 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Edge_Detect.ucf -p xc3s200-ft256-4 Debounce_Test.ngc Debounce_Test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Debounce_Test_map.ncd Debounce_Test.ngd Debounce_Test.pcf 
+par -w -intstyle ise -ol high -t 1 Debounce_Test_map.ncd Debounce_Test.ncd Debounce_Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Debounce_Test.twx Debounce_Test.ncd -o Debounce_Test.twr Debounce_Test.pcf -ucf Edge_Detect.ucf 
+bitgen -intstyle ise -f Debounce_Test.ut Debounce_Test.ncd 

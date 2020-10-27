@@ -1,0 +1,20 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore_isim_beh.exe -prj /home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore_beh.prj work.Edge_Detect_Moore work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 82704 KB
+Fuse CPU Usage: 800 ms
+Compiling module Edge_Detect_Moore
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable /home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore_isim_beh.exe
+Fuse Memory Usage: 1167156 KB
+Fuse CPU Usage: 810 ms
+GCC CPU Usage: 150 ms

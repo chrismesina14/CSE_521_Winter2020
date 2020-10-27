@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore_isim_beh.exe" -prj "/home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore_beh.prj" "work.Edge_Detect_Moore" "work.glbl" 

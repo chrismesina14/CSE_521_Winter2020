@@ -1,0 +1,689 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr
+disp_mux_test.pcf -ucf RotatingCircuit.ucf
+
+Design file:              disp_mux_test.ncd
+Physical constraint file: disp_mux_test.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 40 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 171 paths analyzed, 43 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.344ns.
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_17 (SLICE_X36Y18.CIN), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     35.656ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_1 (FF)
+  Destination:          disp_unit/q_reg_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.344ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_1 to disp_unit/q_reg_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y10.YQ      Tcko                  0.720   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg_1
+    SLICE_X36Y10.G2      net (fanout=1)        0.683   disp_unit/q_reg<1>
+    SLICE_X36Y10.COUT    Topcyg                1.096   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg<1>_rt
+                                                       disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.COUT    Tbyp                  0.120   disp_unit/q_reg<2>
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                1.005   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_cy<16>
+                                                       disp_unit/Mcount_q_reg_xor<17>
+                                                       disp_unit/q_reg_17
+    -------------------------------------------------  ---------------------------
+    Total                                      4.344ns (3.661ns logic, 0.683ns route)
+                                                       (84.3% logic, 15.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.872ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_2 (FF)
+  Destination:          disp_unit/q_reg_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.128ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_2 to disp_unit/q_reg_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y11.XQ      Tcko                  0.720   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg_2
+    SLICE_X36Y11.F1      net (fanout=1)        0.599   disp_unit/q_reg<2>
+    SLICE_X36Y11.COUT    Topcyf                1.084   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg<2>_rt
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                1.005   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_cy<16>
+                                                       disp_unit/Mcount_q_reg_xor<17>
+                                                       disp_unit/q_reg_17
+    -------------------------------------------------  ---------------------------
+    Total                                      4.128ns (3.529ns logic, 0.599ns route)
+                                                       (85.5% logic, 14.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.896ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_5 (FF)
+  Destination:          disp_unit/q_reg_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.104ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_5 to disp_unit/q_reg_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y12.YQ      Tcko                  0.720   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg_5
+    SLICE_X36Y12.G2      net (fanout=1)        0.683   disp_unit/q_reg<5>
+    SLICE_X36Y12.COUT    Topcyg                1.096   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg<5>_rt
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                1.005   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_cy<16>
+                                                       disp_unit/Mcount_q_reg_xor<17>
+                                                       disp_unit/q_reg_17
+    -------------------------------------------------  ---------------------------
+    Total                                      4.104ns (3.421ns logic, 0.683ns route)
+                                                       (83.4% logic, 16.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_16 (SLICE_X36Y18.CIN), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     35.675ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_1 (FF)
+  Destination:          disp_unit/q_reg_16 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.325ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_1 to disp_unit/q_reg_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y10.YQ      Tcko                  0.720   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg_1
+    SLICE_X36Y10.G2      net (fanout=1)        0.683   disp_unit/q_reg<1>
+    SLICE_X36Y10.COUT    Topcyg                1.096   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg<1>_rt
+                                                       disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.COUT    Tbyp                  0.120   disp_unit/q_reg<2>
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                0.986   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_xor<16>
+                                                       disp_unit/q_reg_16
+    -------------------------------------------------  ---------------------------
+    Total                                      4.325ns (3.642ns logic, 0.683ns route)
+                                                       (84.2% logic, 15.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.891ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_2 (FF)
+  Destination:          disp_unit/q_reg_16 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.109ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_2 to disp_unit/q_reg_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y11.XQ      Tcko                  0.720   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg_2
+    SLICE_X36Y11.F1      net (fanout=1)        0.599   disp_unit/q_reg<2>
+    SLICE_X36Y11.COUT    Topcyf                1.084   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg<2>_rt
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                0.986   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_xor<16>
+                                                       disp_unit/q_reg_16
+    -------------------------------------------------  ---------------------------
+    Total                                      4.109ns (3.510ns logic, 0.599ns route)
+                                                       (85.4% logic, 14.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.915ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_5 (FF)
+  Destination:          disp_unit/q_reg_16 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.085ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_5 to disp_unit/q_reg_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y12.YQ      Tcko                  0.720   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg_5
+    SLICE_X36Y12.G2      net (fanout=1)        0.683   disp_unit/q_reg<5>
+    SLICE_X36Y12.COUT    Topcyg                1.096   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg<5>_rt
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.COUT    Tbyp                  0.120   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<15>
+    SLICE_X36Y18.CLK     Tcinck                0.986   disp_unit/q_reg<16>
+                                                       disp_unit/Mcount_q_reg_xor<16>
+                                                       disp_unit/q_reg_16
+    -------------------------------------------------  ---------------------------
+    Total                                      4.085ns (3.402ns logic, 0.683ns route)
+                                                       (83.3% logic, 16.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_15 (SLICE_X36Y17.CIN), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     35.776ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_1 (FF)
+  Destination:          disp_unit/q_reg_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.224ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_1 to disp_unit/q_reg_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y10.YQ      Tcko                  0.720   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg_1
+    SLICE_X36Y10.G2      net (fanout=1)        0.683   disp_unit/q_reg<1>
+    SLICE_X36Y10.COUT    Topcyg                1.096   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg<1>_rt
+                                                       disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<1>
+    SLICE_X36Y11.COUT    Tbyp                  0.120   disp_unit/q_reg<2>
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CLK     Tcinck                1.005   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_xor<15>
+                                                       disp_unit/q_reg_15
+    -------------------------------------------------  ---------------------------
+    Total                                      4.224ns (3.541ns logic, 0.683ns route)
+                                                       (83.8% logic, 16.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     35.992ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_2 (FF)
+  Destination:          disp_unit/q_reg_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      4.008ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_2 to disp_unit/q_reg_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y11.XQ      Tcko                  0.720   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg_2
+    SLICE_X36Y11.F1      net (fanout=1)        0.599   disp_unit/q_reg<2>
+    SLICE_X36Y11.COUT    Topcyf                1.084   disp_unit/q_reg<2>
+                                                       disp_unit/q_reg<2>_rt
+                                                       disp_unit/Mcount_q_reg_cy<2>
+                                                       disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<3>
+    SLICE_X36Y12.COUT    Tbyp                  0.120   disp_unit/q_reg<4>
+                                                       disp_unit/Mcount_q_reg_cy<4>
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CLK     Tcinck                1.005   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_xor<15>
+                                                       disp_unit/q_reg_15
+    -------------------------------------------------  ---------------------------
+    Total                                      4.008ns (3.409ns logic, 0.599ns route)
+                                                       (85.1% logic, 14.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.016ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               disp_unit/q_reg_5 (FF)
+  Destination:          disp_unit/q_reg_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.984ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: disp_unit/q_reg_5 to disp_unit/q_reg_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y12.YQ      Tcko                  0.720   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg_5
+    SLICE_X36Y12.G2      net (fanout=1)        0.683   disp_unit/q_reg<5>
+    SLICE_X36Y12.COUT    Topcyg                1.096   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg<5>_rt
+                                                       disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<5>
+    SLICE_X36Y13.COUT    Tbyp                  0.120   disp_unit/q_reg<6>
+                                                       disp_unit/Mcount_q_reg_cy<6>
+                                                       disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<7>
+    SLICE_X36Y14.COUT    Tbyp                  0.120   disp_unit/q_reg<8>
+                                                       disp_unit/Mcount_q_reg_cy<8>
+                                                       disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<9>
+    SLICE_X36Y15.COUT    Tbyp                  0.120   disp_unit/q_reg<10>
+                                                       disp_unit/Mcount_q_reg_cy<10>
+                                                       disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<11>
+    SLICE_X36Y16.COUT    Tbyp                  0.120   disp_unit/q_reg<12>
+                                                       disp_unit/Mcount_q_reg_cy<12>
+                                                       disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CIN     net (fanout=1)        0.000   disp_unit/Mcount_q_reg_cy<13>
+    SLICE_X36Y17.CLK     Tcinck                1.005   disp_unit/q_reg<14>
+                                                       disp_unit/Mcount_q_reg_cy<14>
+                                                       disp_unit/Mcount_q_reg_xor<15>
+                                                       disp_unit/q_reg_15
+    -------------------------------------------------  ---------------------------
+    Total                                      3.984ns (3.301ns logic, 0.683ns route)
+                                                       (82.9% logic, 17.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 40 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_0 (SLICE_X36Y10.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.311ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               disp_unit/q_reg_0 (FF)
+  Destination:          disp_unit/q_reg_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.311ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 40.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: disp_unit/q_reg_0 to disp_unit/q_reg_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y10.XQ      Tcko                  0.576   disp_unit/q_reg<0>
+                                                       disp_unit/q_reg_0
+    SLICE_X36Y10.F4      net (fanout=1)        0.297   disp_unit/q_reg<0>
+    SLICE_X36Y10.CLK     Tckf        (-Th)    -0.438   disp_unit/q_reg<0>
+                                                       disp_unit/Mcount_q_reg_lut<0>_INV_0
+                                                       disp_unit/Mcount_q_reg_xor<0>
+                                                       disp_unit/q_reg_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.311ns (1.014ns logic, 0.297ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_4 (SLICE_X36Y12.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.311ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               disp_unit/q_reg_4 (FF)
+  Destination:          disp_unit/q_reg_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.311ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 40.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: disp_unit/q_reg_4 to disp_unit/q_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y12.XQ      Tcko                  0.576   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg_4
+    SLICE_X36Y12.F4      net (fanout=1)        0.297   disp_unit/q_reg<4>
+    SLICE_X36Y12.CLK     Tckf        (-Th)    -0.438   disp_unit/q_reg<4>
+                                                       disp_unit/q_reg<4>_rt
+                                                       disp_unit/Mcount_q_reg_xor<4>
+                                                       disp_unit/q_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.311ns (1.014ns logic, 0.297ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point disp_unit/q_reg_8 (SLICE_X36Y14.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.311ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               disp_unit/q_reg_8 (FF)
+  Destination:          disp_unit/q_reg_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.311ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 40.000ns
+  Destination Clock:    clk_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: disp_unit/q_reg_8 to disp_unit/q_reg_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y14.XQ      Tcko                  0.576   disp_unit/q_reg<8>
+                                                       disp_unit/q_reg_8
+    SLICE_X36Y14.F4      net (fanout=1)        0.297   disp_unit/q_reg<8>
+    SLICE_X36Y14.CLK     Tckf        (-Th)    -0.438   disp_unit/q_reg<8>
+                                                       disp_unit/q_reg<8>_rt
+                                                       disp_unit/Mcount_q_reg_xor<8>
+                                                       disp_unit/q_reg_8
+    -------------------------------------------------  ---------------------------
+    Total                                      1.311ns (1.014ns logic, 0.297ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 40 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 38.428ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.786ns (Tcl)
+  Physical resource: disp_unit/q_reg<0>/CLK
+  Logical resource: disp_unit/q_reg_0/CK
+  Location pin: SLICE_X36Y10.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 38.428ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 0.786ns (Tch)
+  Physical resource: disp_unit/q_reg<0>/CLK
+  Logical resource: disp_unit/q_reg_0/CK
+  Location pin: SLICE_X36Y10.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 38.428ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.786ns (Tcl)
+  Physical resource: disp_unit/q_reg<0>/CLK
+  Logical resource: disp_unit/q_reg_1/CK
+  Location pin: SLICE_X36Y10.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.344|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 171 paths, 0 nets, and 36 connections
+
+Design statistics:
+   Minimum period:   4.344ns{1}   (Maximum frequency: 230.203MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Feb  4 14:06:10 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 310 MB
+
+
+

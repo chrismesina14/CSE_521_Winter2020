@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;Top_Module.v&quot; line 37 </arg>Connection to input port &apos;<arg fmt="%s" index="2">hex3</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;Top_Module.v&quot; line 39 </arg>Connection to input port &apos;<arg fmt="%s" index="2">hex1</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;Top_Module.v&quot; line 40 </arg>Connection to input port &apos;<arg fmt="%s" index="2">hex0</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;Top_Module.v&quot; line 41 </arg>Connection to input port &apos;<arg fmt="%s" index="2">dp_in</arg>&apos; does not match port size
+</msg>
+
+</messages>
+

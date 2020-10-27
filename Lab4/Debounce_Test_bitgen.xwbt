@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.ncd
+OUTFILE=/home/csusb.edu/005319687/cse521/Lab4/Debounce_Test.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=/home/csusb.edu/005319687/cse521/Lab4
+LICENSE=WebPack
+USER_INFO=210756416_0_0_154

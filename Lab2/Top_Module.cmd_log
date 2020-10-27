@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab2/Top_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Four_Bit_Full_Adder.ucf -p xc3s200-ft256-4 Top_Module.ngc Top_Module.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o Top_Module_map.ncd Top_Module.ngd Top_Module.pcf 
+par -w -intstyle ise -ol high -t 1 Top_Module_map.ncd Top_Module.ncd Top_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf 
+bitgen -intstyle ise -f Top_Module.ut Top_Module.ncd 

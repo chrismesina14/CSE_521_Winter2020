@@ -1,0 +1,63 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab5/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 

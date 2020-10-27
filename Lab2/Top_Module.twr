@@ -1,0 +1,182 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Top_Module.twx Top_Module.ncd -o Top_Module.twr
+Top_Module.pcf -ucf Four_Bit_Full_Adder.ucf
+
+Design file:              Top_Module.ncd
+Physical constraint file: Top_Module.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+an<0>       |   11.039(R)|clk_BUFGP         |   0.000|
+an<1>       |   10.106(R)|clk_BUFGP         |   0.000|
+an<2>       |   11.370(R)|clk_BUFGP         |   0.000|
+an<3>       |   11.442(R)|clk_BUFGP         |   0.000|
+sseg<0>     |   13.747(R)|clk_BUFGP         |   0.000|
+sseg<1>     |   13.576(R)|clk_BUFGP         |   0.000|
+sseg<2>     |   14.025(R)|clk_BUFGP         |   0.000|
+sseg<3>     |   14.311(R)|clk_BUFGP         |   0.000|
+sseg<4>     |   14.044(R)|clk_BUFGP         |   0.000|
+sseg<5>     |   13.671(R)|clk_BUFGP         |   0.000|
+sseg<6>     |   13.922(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.131|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Cout           |   10.871|
+A<0>           |Sum<0>         |    9.272|
+A<0>           |Sum<1>         |    9.283|
+A<0>           |Sum<2>         |   10.182|
+A<0>           |Sum<3>         |   11.904|
+A<0>           |sseg<0>        |   13.803|
+A<0>           |sseg<1>        |   13.817|
+A<0>           |sseg<2>        |   13.847|
+A<0>           |sseg<3>        |   14.476|
+A<0>           |sseg<4>        |   14.452|
+A<0>           |sseg<5>        |   14.085|
+A<0>           |sseg<6>        |   13.915|
+A<1>           |Cout           |   10.199|
+A<1>           |Sum<1>         |    8.629|
+A<1>           |Sum<2>         |    9.510|
+A<1>           |Sum<3>         |   11.232|
+A<1>           |sseg<0>        |   13.131|
+A<1>           |sseg<1>        |   13.145|
+A<1>           |sseg<2>        |   13.175|
+A<1>           |sseg<3>        |   13.804|
+A<1>           |sseg<4>        |   13.780|
+A<1>           |sseg<5>        |   13.413|
+A<1>           |sseg<6>        |   13.243|
+A<2>           |Cout           |    8.752|
+A<2>           |Sum<2>         |    7.958|
+A<2>           |Sum<3>         |    9.785|
+A<2>           |sseg<0>        |   11.684|
+A<2>           |sseg<1>        |   11.698|
+A<2>           |sseg<2>        |   11.728|
+A<2>           |sseg<3>        |   12.357|
+A<2>           |sseg<4>        |   12.333|
+A<2>           |sseg<5>        |   11.966|
+A<2>           |sseg<6>        |   11.796|
+A<3>           |Cout           |    8.208|
+A<3>           |Sum<3>         |    8.816|
+A<3>           |sseg<0>        |   11.140|
+A<3>           |sseg<1>        |   11.154|
+A<3>           |sseg<2>        |   11.184|
+A<3>           |sseg<3>        |   11.813|
+A<3>           |sseg<4>        |   11.789|
+A<3>           |sseg<5>        |   11.422|
+A<3>           |sseg<6>        |   11.252|
+B<0>           |Cout           |   10.554|
+B<0>           |Sum<0>         |    9.154|
+B<0>           |Sum<1>         |    8.966|
+B<0>           |Sum<2>         |    9.865|
+B<0>           |Sum<3>         |   11.587|
+B<0>           |sseg<0>        |   13.486|
+B<0>           |sseg<1>        |   13.500|
+B<0>           |sseg<2>        |   13.530|
+B<0>           |sseg<3>        |   14.159|
+B<0>           |sseg<4>        |   14.135|
+B<0>           |sseg<5>        |   13.768|
+B<0>           |sseg<6>        |   13.598|
+B<1>           |Cout           |   10.057|
+B<1>           |Sum<1>         |    8.054|
+B<1>           |Sum<2>         |    9.368|
+B<1>           |Sum<3>         |   11.090|
+B<1>           |sseg<0>        |   12.989|
+B<1>           |sseg<1>        |   13.003|
+B<1>           |sseg<2>        |   13.033|
+B<1>           |sseg<3>        |   13.662|
+B<1>           |sseg<4>        |   13.638|
+B<1>           |sseg<5>        |   13.271|
+B<1>           |sseg<6>        |   13.101|
+B<2>           |Cout           |    8.888|
+B<2>           |Sum<2>         |    8.944|
+B<2>           |Sum<3>         |    9.921|
+B<2>           |sseg<0>        |   11.820|
+B<2>           |sseg<1>        |   11.834|
+B<2>           |sseg<2>        |   11.864|
+B<2>           |sseg<3>        |   12.493|
+B<2>           |sseg<4>        |   12.469|
+B<2>           |sseg<5>        |   12.102|
+B<2>           |sseg<6>        |   11.932|
+B<3>           |Cout           |    8.738|
+B<3>           |Sum<3>         |    9.231|
+B<3>           |sseg<0>        |   11.670|
+B<3>           |sseg<1>        |   11.684|
+B<3>           |sseg<2>        |   11.714|
+B<3>           |sseg<3>        |   12.343|
+B<3>           |sseg<4>        |   12.319|
+B<3>           |sseg<5>        |   11.952|
+B<3>           |sseg<6>        |   11.782|
+Cin            |Cout           |   10.076|
+Cin            |Sum<0>         |    8.598|
+Cin            |Sum<1>         |    8.488|
+Cin            |Sum<2>         |    9.387|
+Cin            |Sum<3>         |   11.109|
+Cin            |sseg<0>        |   13.008|
+Cin            |sseg<1>        |   13.022|
+Cin            |sseg<2>        |   13.052|
+Cin            |sseg<3>        |   13.681|
+Cin            |sseg<4>        |   13.657|
+Cin            |sseg<5>        |   13.290|
+Cin            |sseg<6>        |   13.120|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 30 13:24:47 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 302 MB
+
+
+

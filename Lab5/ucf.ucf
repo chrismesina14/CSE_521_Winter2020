@@ -1,0 +1,56 @@
+#========================================================
+#    Pin assignment for Xilinx
+#    Spartan-3 Starter board
+#========================================================
+
+#========================================================
+# clock and reset
+#========================================================
+NET "clk"    LOC = "T9" ;
+NET "reset"  LOC = "L14";
+
+#========================================================
+# buttons & switches
+#========================================================
+# 4 pushbuttons
+NET "btn<0>"   LOC = "M13";
+NET "btn<1>"   LOC = "M14";
+NET "btn<2>"   LOC = "L13";
+#NET "btn<3>"  LOC = "L14";  #btn<3> also used as reset
+
+#========================================================
+# RS232
+#========================================================
+NET "rx"  LOC = "T13" | DRIVE=8 | SLEW=SLOW;
+NET "tx"  LOC = "R13" | DRIVE=8 | SLEW=SLOW;
+
+#========================================================
+# 4-digit time-multiplexed 7-segment LED display
+#========================================================
+# digit enable
+NET "an<0>"  LOC = "D14";
+NET "an<1>"  LOC = "G14";
+NET "an<2>"  LOC = "F14";
+NET "an<3>"  LOC = "E13";
+
+# 7-segment led segments
+NET "sseg<7>"  LOC = "P16"; # decimal point
+NET "sseg<6>"  LOC = "E14"; # segment a
+NET "sseg<5>"  LOC = "G13"; # segment b
+NET "sseg<4>"  LOC = "N15"; # segment c
+NET "sseg<3>"  LOC = "P15"; # segment d
+NET "sseg<2>"  LOC = "R16"; # segment e
+NET "sseg<1>"  LOC = "F13"; # segment f
+NET "sseg<0>"  LOC = "N16"; # segment g
+
+#========================================================
+# 8 discrete LEDs
+#========================================================
+NET "led<0>"  LOC = "K12";
+NET "led<1>"  LOC = "P14";
+NET "led<2>"  LOC = "L12";
+NET "led<3>"  LOC = "N14";
+NET "led<4>"  LOC = "P13";
+NET "led<5>"  LOC = "N12";
+NET "led<6>"  LOC = "P12";
+NET "led<7>"  LOC = "P11";

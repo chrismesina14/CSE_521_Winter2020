@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_hex_mux.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_hex_mux.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_hex_mux.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_hex_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 disp_hex_mux.ngc disp_hex_mux.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_hex_mux_map.ncd disp_hex_mux.ngd disp_hex_mux.pcf 
+par -w -intstyle ise -ol high -t 1 disp_hex_mux_map.ncd disp_hex_mux.ncd disp_hex_mux.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_hex_mux.twx disp_hex_mux.ncd -o disp_hex_mux.twr disp_hex_mux.pcf 
+bitgen -intstyle ise -f disp_hex_mux.ut disp_hex_mux.ncd 

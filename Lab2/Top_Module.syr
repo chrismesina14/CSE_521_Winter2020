@@ -1,0 +1,449 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Top_Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_Module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_Module"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : Top_Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Full_Adder.v" in library work
+Compiling verilog file "Four_Bit_Full_Adder.v" in library work
+Module <Full_Adder> compiled
+Compiling verilog file "disp_hex_mux.v" in library work
+Module <Four_Bit_Full_Adder> compiled
+Compiling verilog file "Top_Module.v" in library work
+Module <disp_hex_mux> compiled
+Module <Top_Module> compiled
+No errors in compilation
+Analysis of file <"Top_Module.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top_Module> in library <work>.
+
+Analyzing hierarchy for module <disp_hex_mux> in library <work> with parameters.
+	N = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <Four_Bit_Full_Adder> in library <work>.
+
+Analyzing hierarchy for module <Full_Adder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top_Module>.
+Module <Top_Module> is correct for synthesis.
+ 
+Analyzing module <disp_hex_mux> in library <work>.
+	N = 32'sb00000000000000000000000000010010
+Module <disp_hex_mux> is correct for synthesis.
+ 
+Analyzing module <Four_Bit_Full_Adder> in library <work>.
+Module <Four_Bit_Full_Adder> is correct for synthesis.
+ 
+Analyzing module <Full_Adder> in library <work>.
+Module <Full_Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <disp_hex_mux>.
+    Related source file is "disp_hex_mux.v".
+    Found 16x7-bit ROM for signal <hex_in$rom0000>.
+    Found 1-of-4 decoder for signal <an>.
+    Found 4-bit 4-to-1 multiplexer for signal <hex_in>.
+    Found 18-bit up counter for signal <q_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <disp_hex_mux> synthesized.
+
+
+Synthesizing Unit <Full_Adder>.
+    Related source file is "Full_Adder.v".
+    Found 1-bit xor2 for signal <Cout>.
+    Found 1-bit xor2 for signal <w1>.
+Unit <Full_Adder> synthesized.
+
+
+Synthesizing Unit <Four_Bit_Full_Adder>.
+    Related source file is "Four_Bit_Full_Adder.v".
+Unit <Four_Bit_Full_Adder> synthesized.
+
+
+Synthesizing Unit <Top_Module>.
+    Related source file is "Top_Module.v".
+Unit <Top_Module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Top_Module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_Module, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top_Module.ngr
+Top Level Output File Name         : Top_Module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 78
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 17
+#      LUT2                        : 4
+#      LUT3                        : 8
+#      LUT4                        : 11
+#      MUXCY                       : 17
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 18
+#      FDC                         : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 10
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       22  out of   1920     1%  
+ Number of Slice Flip Flops:             18  out of   3840     0%  
+ Number of 4 input LUTs:                 41  out of   3840     1%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    173    16%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 18    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.978ns (Maximum Frequency: 200.884MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 12.508ns
+   Maximum combinational path delay: 17.402ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.978ns (frequency: 200.884MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               4.978ns (Levels of Logic = 18)
+  Source:            seg_display/q_reg_1 (FF)
+  Destination:       seg_display/q_reg_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: seg_display/q_reg_1 to seg_display/q_reg_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   1.140  seg_display/q_reg_1 (seg_display/q_reg_1)
+     LUT1:I0->O            1   0.551   0.000  seg_display/Mcount_q_reg_cy<1>_rt (seg_display/Mcount_q_reg_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  seg_display/Mcount_q_reg_cy<1> (seg_display/Mcount_q_reg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<2> (seg_display/Mcount_q_reg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<3> (seg_display/Mcount_q_reg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<4> (seg_display/Mcount_q_reg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<5> (seg_display/Mcount_q_reg_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<6> (seg_display/Mcount_q_reg_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<7> (seg_display/Mcount_q_reg_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<8> (seg_display/Mcount_q_reg_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<9> (seg_display/Mcount_q_reg_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<10> (seg_display/Mcount_q_reg_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<11> (seg_display/Mcount_q_reg_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<12> (seg_display/Mcount_q_reg_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<13> (seg_display/Mcount_q_reg_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<14> (seg_display/Mcount_q_reg_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  seg_display/Mcount_q_reg_cy<15> (seg_display/Mcount_q_reg_cy<15>)
+     MUXCY:CI->O           0   0.064   0.000  seg_display/Mcount_q_reg_cy<16> (seg_display/Mcount_q_reg_cy<16>)
+     XORCY:CI->O           1   0.904   0.000  seg_display/Mcount_q_reg_xor<17> (Result<17>)
+     FDC:D                     0.203          seg_display/q_reg_17
+    ----------------------------------------
+    Total                      4.978ns (3.838ns logic, 1.140ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 64 / 11
+-------------------------------------------------------------------------
+Offset:              12.508ns (Levels of Logic = 4)
+  Source:            seg_display/q_reg_17 (FF)
+  Destination:       sseg<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: seg_display/q_reg_17 to sseg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.720   1.342  seg_display/q_reg_17 (seg_display/q_reg_17)
+     LUT2:I0->O            4   0.551   0.943  seg_display/Mdecod_an21 (an_2_OBUF)
+     LUT4:I3->O            7   0.551   1.405  seg_display/Mmux_hex_in31 (seg_display/hex_in<1>)
+     LUT4:I0->O            1   0.551   0.801  seg_display/Mrom_hex_in_rom000041 (sseg_4_OBUF)
+     OBUF:I->O                 5.644          sseg_4_OBUF (sseg<4>)
+    ----------------------------------------
+    Total                     12.508ns (8.017ns logic, 4.491ns route)
+                                       (64.1% logic, 35.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 264 / 12
+-------------------------------------------------------------------------
+Delay:               17.402ns (Levels of Logic = 8)
+  Source:            B<0> (PAD)
+  Destination:       sseg<6> (PAD)
+
+  Data Path: B<0> to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.216  B_0_IBUF (B_0_IBUF)
+     LUT3:I0->O            3   0.551   1.102  FourBitFullAdder/fa0/Sum1 (FourBitFullAdder/C1)
+     LUT3:I1->O            3   0.551   1.102  FourBitFullAdder/fa1/Sum1 (FourBitFullAdder/C2)
+     LUT3:I1->O            3   0.551   1.102  FourBitFullAdder/fa2/Sum1 (FourBitFullAdder/C3)
+     LUT3:I1->O            2   0.551   0.903  FourBitFullAdder/fa3/Sum1 (Cout_OBUF)
+     LUT4:I3->O            7   0.551   1.405  seg_display/Mmux_hex_in21 (seg_display/hex_in<0>)
+     LUT4:I0->O            1   0.551   0.801  seg_display/Mrom_hex_in_rom000031 (sseg_3_OBUF)
+     OBUF:I->O                 5.644          sseg_3_OBUF (sseg<3>)
+    ----------------------------------------
+    Total                     17.402ns (9.771ns logic, 7.631ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.43 secs
+ 
+--> 
+
+
+Total memory usage is 496524 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,4 @@
+verilog work "Full_Adder.v"
+verilog work "Four_Bit_Full_Adder.v"
+verilog work "disp_hex_mux.v"
+verilog work "Top_Module.v"

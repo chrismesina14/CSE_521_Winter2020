@@ -1,0 +1,47 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+bitgen -intstyle ise -f disp_mux_test.ut disp_mux_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+bitgen -intstyle ise -f disp_mux_test.ut disp_mux_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotatingCircuit.ucf -p xc3s200-ft256-4 disp_mux_test.ngc disp_mux_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o disp_mux_test_map.ncd disp_mux_test.ngd disp_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 disp_mux_test_map.ncd disp_mux_test.ncd disp_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml disp_mux_test.twx disp_mux_test.ncd -o disp_mux_test.twr disp_mux_test.pcf -ucf RotatingCircuit.ucf 
+bitgen -intstyle ise -f disp_mux_test.ut disp_mux_test.ncd 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab3/disp_mux_test.syr" 

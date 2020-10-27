@@ -1,0 +1,3 @@
+verilog work "Edge_Detect_Moore.v"
+verilog work "disp_hex_mux.v"
+verilog work "Debounce_Test.v"

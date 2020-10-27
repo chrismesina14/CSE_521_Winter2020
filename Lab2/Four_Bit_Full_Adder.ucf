@@ -1,0 +1,28 @@
+NET "clk" LOC = "T9" ;
+NET "reset" LOC = "L14"; 
+
+# 8 slide switches
+NET "A[0]"  LOC = "F12";
+NET "A[1]"  LOC = "G12";
+NET "A[2]"  LOC = "H14";
+NET "A[3]"  LOC = "H13";
+NET "B[0]"  LOC = "J14";
+NET "B[1]"  LOC = "J13";
+NET "B[2]"  LOC = "K14";
+NET "B[3]"  LOC = "K13";
+
+# digit enable
+NET "an<0>" LOC = "D14";
+NET "an<1>" LOC = "G14";
+NET "an<2>" LOC = "F14";
+NET "an<3>" LOC = "E13"; 
+
+# 7-segment led segments
+NET "sseg[7]"  LOC = "P16"; # decimal point
+NET "sseg[6]"  LOC = "E14"; # segment a
+NET "sseg[5]"  LOC = "G13"; # segment b
+NET "sseg[4]"  LOC = "N15"; # segment c
+NET "sseg[3]"  LOC = "P15"; # segment d
+NET "sseg[2]"  LOC = "R16"; # segment e
+NET "sseg[1]"  LOC = "F13"; # segment f
+NET "sseg[0]"  LOC = "N16"; # segment g

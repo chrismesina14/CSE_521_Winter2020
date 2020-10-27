@@ -1,0 +1,5 @@
+verilog work "directional_selector2.v"
+verilog work "directional_selector.v"
+verilog work "counter_clockwise.v"
+verilog work "clockwise.v"
+verilog work "TopModule.v"

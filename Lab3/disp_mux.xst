@@ -1,0 +1,5 @@
+set -tmpdir "/home/csusb.edu/005319687/cse521/Lab3/xst/projnav.tmp"
+set -xsthdpdir "/home/csusb.edu/005319687/cse521/Lab3/xst"
+elaborate
+-ifn disp_mux.prj
+-ifmt mixed

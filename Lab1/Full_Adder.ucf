@@ -1,0 +1,8 @@
+# 8 slide switches
+NET "A"  LOC = "F12";
+NET "B"  LOC = "G12";
+NET "Cin"  LOC = "H14";
+
+# 8 discrete LEDs
+NET "Cout"  LOC = "K12";
+NET "S"  LOC = "P14";

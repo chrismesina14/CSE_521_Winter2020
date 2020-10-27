@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/csusb.edu/005319687/cse521/Lab2/Four_Bit_Full_Adder_Test_isim_beh.exe" -prj "/home/csusb.edu/005319687/cse521/Lab2/Four_Bit_Full_Adder_Test_beh.prj" "work.Four_Bit_Full_Adder_Test" "work.glbl" 

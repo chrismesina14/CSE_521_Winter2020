@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab4/Edge_Detect_Moore.syr" 

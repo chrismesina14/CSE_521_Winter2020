@@ -1,0 +1,7 @@
+verilog work "UAR_tx.v"
+verilog work "UART_rx.v"
+verilog work "mod_m_counter.v"
+verilog work "fifo.v"
+verilog work "UART.v"
+verilog work "debounce.v"
+verilog work "UART_test.v"

@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.syr" 
+xst -intstyle ise -ifn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.xst" -ofn "/home/csusb.edu/005319687/cse521/Lab1/Full_Adder_Test.syr" 
